@@ -13,7 +13,7 @@ make -B
 
 ```bash
 mkdir -p build
-gcc -Wall -Wextra -ggdb src/png2c.c -o build/png2c -lX11 -lXrandr -lGL -lm
+gcc -Wall -Wextra -ggdb src/png2c.c -o build/png2c -lm
 build/png2c assets/digits.png digits > src/digits.h
 build/png2c assets/penger_walk_sheet.png penger > src/penger_walk_sheet.h
 gcc -Wall -Wextra -ggdb src/main.c -o timer -lX11 -lXrandr -lGL -lm
@@ -42,6 +42,9 @@ gcc -Wall -Wextra -ggdb src/main.c -o timer -lX11 -lXrandr -lGL -lm
 | <kbd>-</kbd>     | Decrease text size          |
 | <kbd>F11</kbd>   | Toggle full-screen          |
 
+### Demo
+
+![timer-demo](https://github.com/user-attachments/assets/b5a02a89-1a36-4e97-b6ca-59c2f6b1baee)
 
 ### References
 
