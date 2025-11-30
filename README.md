@@ -16,7 +16,7 @@ mkdir -p build
 gcc -Wall -Wextra -ggdb src/png2c.c -o build/png2c -lm
 build/png2c assets/digits.png digits > src/digits.h
 build/png2c assets/penger_walk_sheet.png penger > src/penger_walk_sheet.h
-gcc -Wall -Wextra -ggdb src/main.c -o timer -lX11 -lXrandr -lGL -lm
+gcc -Wall -Wextra -ggdb src/timer.c -o timer -lX11 -lXrandr -lGL -lm
 ```
 
 > If no time is provided, the timer defaults to **stopwatch mode**. Time format: `1h2m3s` (hours, minutes, seconds). Options include starting paused or auto-exit on completion.
